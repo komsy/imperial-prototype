@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Imperial</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style/css/style.css">
+  <link href="style/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  
+  
+  <div class="col d-flex justify-content-center" style="margin-top: 250px;">
+    <div class="card log">
+     <div class="card-body">
+      <form name="loginForm" method="post" action="docinfo.html">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" name="userid" class="form-control" id="username">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" name="pwd" class="form-control" id="password">
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <p >Remember me</p>
+        </div>
+        <input type="submit" onclick="return check(this.form)" value="Login" style="background-color:green;">
+        <!-- <span class="psw">Forgot <a href="#">password?</a></span> -->
+        <br>
+        <a href="signup.html">Does not have an account? Sign up!</a>
+      </form> 
+     </div>
+    </div>
+  </div>
+<script language="javascript">
+function check(form)
+{
+
+if(form.userid.value == "komsy" && form.pwd.value == "password")
+{
+  return true;
+}
+else 
+{
+  window.location = "Pinfo.html";
+  return false;
+}
+}
+</script>
+
+</body>
+</html>
