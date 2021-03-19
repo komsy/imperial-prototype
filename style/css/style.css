@@ -33,3 +33,14 @@ img {
 .foot{
   color: black;
 }
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+  .log{
+    width: 300px;
+    margin-left: 10px;
+  }
+   .log1{
+    width: 700px;
+  }
+  }
+
